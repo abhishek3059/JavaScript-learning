@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Api || timeOut and Interval</title>
+</head>
+<body style="background-color: #212121; color : #fff">
+    <h1>Change me </h1>
+    <button class="stop">stop</button>
+    <button class="start">start</button>
+</body>
+<script>
+let timeOut;
+const changeAtTimeout = function(msg){
+    document.querySelector('h1').innerHTML = "Changed At 2 seconds"
+}
+
+document.querySelector('.start').addEventListener('click',function(e){
+     timeOut = setTimeout(changeAtTimeout,2000)
+})
+document.querySelector('.stop').addEventListener('click',function(e){
+  clearTimeout(timeOut)
+  document.querySelector('h1').innerHTML = "Changed me"  
+})
+
+</script>
+</html>

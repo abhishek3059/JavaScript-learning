@@ -1,0 +1,11 @@
+Arrays : 
+Shallow Copy : Share same reference point 
+Deep Copy : Do not share same reference point.
+Arrays : 
+There are various methods 
+|Splice : it is a method in which it modifies the array from start index and removes the elements in the argument
+ and then inserts the desired elements at there place
+ Spice on the other hand performs given operation and returns the copy of the array without making any changes 
+ to the original array. it should return the subsequence of the original array as specified indexes in the method.
+ there are several methods in arrays for different purpose like includes, lastIndexOf, firstIndexOf, etc.
+ 

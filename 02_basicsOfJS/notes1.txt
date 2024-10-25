@@ -1,0 +1,10 @@
+JavaScript execution Context
+When we give a file to the javascript enviornment or compiler 
+then firstly 
+A global Execution Context  is created by javascript and it is referred by (this)
+the above is applicable for node.js enviornment
+and for browser the global execution context is window object 
+Note : Creation of the global execution context will happen no matter what
+1. Global Execution Context
+2. Functional Execution Context 
+3. Eval Execution Context 

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=yul, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color : #fff">
+    <ul class="programmingList">
+        <li>Javascript</li>
+
+    </ul>
+</body>
+<script>
+    const createListItem = (value)=> {
+        let createdListElement = document.createElement("li")
+        let listValue = document.createTextNode(value)
+        createdListElement.appendChild(listValue);
+        const parent = document.querySelector(".programmingList")
+        parent.appendChild(createdListElement)
+        }
+
+        createListItem("Java")
+        createListItem("Python")
+        createListItem("Ruby")
+        createListItem("GoLang")
+        
+</script>
+</html>

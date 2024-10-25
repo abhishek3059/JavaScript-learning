@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipultion using Javascript </title>
+</head>
+<body style="background-color: black;color: #fff;" >
+    this is Dom manipulation 
+    <div class="day">monday</div>
+    <div class="day">tuesday</div>
+    <div class="day">wednesday</div>
+    <div class="day">thursday</div>
+    <div class="day">friday</div>
+    <div class="day">saturday</div>
+    <div class="day">Sunday</div>
+</body>
+<script>
+    const element = document.querySelectorAll(".day")
+    //console.log(element);
+    const myDayList = Array.from(element)
+    myDayList.forEach((i)=> i.style.color = "green")
+    const createdElement = document.createElement("div")
+    //console.log(createdElement);
+    createdElement.className = "hours"
+    createdElement.id = Math.floor(Math.random() * 10 + 1)
+    createdElement.setAttribute("title","This tile is for hours")
+    createdElement.style.backgroundColor = "white"
+    createdElement.style.color= "green"
+    createdElement.style.padding = "10px"
+    const addText = document.createTextNode("This is inside created div")
+    createdElement.appendChild(addText);
+    document.body.appendChild(createdElement);
+    //console.log(createdElement);
+</script>
+</html>
